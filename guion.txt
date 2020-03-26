@@ -1,4 +1,19 @@
-1. git commit --amend -m 'New commit message'
+1. Change a commit message that hasn't been pushed yet
+
+git commit --amend -m 'New commit message'
 git log --oneline
 
 Con el flag --amend corrigo el mensaje del último commit que he hecho.
+
+2. Add more files and changes to a commit before pushing
+
+Creamos un fichero como app.js y queremos añadirlo dentro del último commit que hemos hecho
+
+git commit --amend -m 'New commit message'
+
+3. Remove files from staging before commiting
+
+3.1 Añadimos lib.js al directorio
+3.2 Hacemos git add lib.js  --> lib.js está en el staging area
+3.3 Hacemos git reset HEAD lib.js --> lib.js desaparece del staging area
+3.4 Podemos borrar lib.js de nuestro directorio si queremos
