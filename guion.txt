@@ -1,0 +1,4 @@
+1. git commit --amend -m 'New commit message'
+git log --oneline
+
+Con el flag --amend corrigo el mensaje del último commit que he hecho.
